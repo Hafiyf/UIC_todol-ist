@@ -7,22 +7,29 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+
     <link rel="icon" href="./images/checked.png">
     <title>Todo list - Jamshid</title>
 </head>
 <body>
-    <h1 class="">Todo</h1>
-	<input type="text" id="new-todo" placeholder="Add new todo">
-	<button id="add-todo">Add</button>
-	<ul id="todo-list"></ul>
+    <section class="todo bg-[url('./images/background.png')] bg-no-repeat bg-contain w-[100%] h-[100vh]">
+        <div class="container ">
+            <div class="wrapper ">
+
+                <h1 class="todo__heading heading font-sans">TODO</h1>
+
+                <input type="text" id="new-todo" placeholder="Create a new todo…">
+                <button class="" id="add-todo"></button>
+                <div class="" id="todo-list"></div>
+
+                
+            </div>
+        </div>
+    </section>
     
 
 </body>
-<style>
-    .todo-list{
-        display: flex;
-        
-    }
-</style>
-<script src="./JavaScript/main.js"></script>
+
+<script src="./JavaScript/index.js"></script>
 </html>
